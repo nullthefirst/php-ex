@@ -1,0 +1,26 @@
+# Dependencies
+/vendor/
+
+# Configuration and Secrets
+.env
+.env.local
+.env.*.local
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build and Logs
+/build/
+/dist/
+*.log
+/storage/*.log
