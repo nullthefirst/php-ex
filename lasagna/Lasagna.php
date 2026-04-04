@@ -24,6 +24,6 @@ class Lasagna
 
     public function alarm()
     {
-        // Implement the alarm method
+        return "Ding!";
     }
 }
