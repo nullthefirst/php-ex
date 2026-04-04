@@ -14,7 +14,7 @@ class Lasagna
 
     public function totalPreparationTime($layers_to_prep)
     {
-        // Implement the totalPreparationTime method
+        return $layers_to_prep * 2;
     }
 
     public function totalElapsedTime($layers_to_prep, $elapsed_minutes)
