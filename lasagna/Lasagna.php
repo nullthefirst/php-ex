@@ -9,7 +9,7 @@ class Lasagna
 
     public function remainingCookTime($elapsed_minutes)
     {
-        // Implement the remainingCookTime method
+        return $this->expectedCookTime() - $elapsed_minutes;
     }
 
     public function totalPreparationTime($layers_to_prep)
