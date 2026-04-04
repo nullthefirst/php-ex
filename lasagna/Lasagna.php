@@ -19,7 +19,7 @@ class Lasagna
 
     public function totalElapsedTime($layers_to_prep, $elapsed_minutes)
     {
-        // Implement the totalElapsedTime method
+        return $this->totalPreparationTime($layers_to_prep) + $elapsed_minutes;
     }
 
     public function alarm()
