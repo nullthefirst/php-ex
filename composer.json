@@ -1,0 +1,16 @@
+{
+    "name": "nully/php",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Nully\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tey - nullthefirst",
+            "email": "usheninte234@gmail.com"
+        }
+    ],
+    "require": {}
+}
