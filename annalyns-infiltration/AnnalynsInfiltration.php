@@ -4,7 +4,7 @@ class AnnalynsInfiltration
 {
     public function canFastAttack($is_knight_awake)
     {
-        throw new \BadFunctionCallException("Implement the function");
+        return true ? !$is_knight_awake : false;
     }
 
     public function canSpy(
