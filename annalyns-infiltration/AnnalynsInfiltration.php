@@ -12,7 +12,13 @@ class AnnalynsInfiltration
         $is_archer_awake,
         $is_prisoner_awake
     ) {
-        throw new \BadFunctionCallException("Implement the function");
+        $group = [$is_knight_awake, $is_archer_awake, $is_prisoner_awake];
+
+        if (in_array(true, $group, true)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public function canSignal(
