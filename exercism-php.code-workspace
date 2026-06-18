@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    // 1. Completely disable VS Code's core AI features and Copilot extensions
+    "chat.disableAIFeatures": true,
+
+    // 2. Disable GitHub Copilot code completions specifically
+    "github.completions.enabled": false,
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "php": false,
+    },
+
+    // 3. Disable PHP IntelliSense AI / advanced inline completion features
+    // Controls built-in suggestion types if using extensions like PHP Intelephense or PHP Tools
+    "php.suggest.basic": true, // Keeps standard PHP completions (non-AI)
+    "intelephense.completion.triggerParameterHints": true,
+
+    // Explicitly disable inline ghost text/AI completions if your PHP extension provides them
+    "editor.inlineSuggest.enabled": false,
+
+    // 4. Opt out of background telemetry and experiment pipelines related to AI
+    "telemetry.telemetryLevel": "off",
+    "workbench.enableExperiments": false,
+  },
+}
