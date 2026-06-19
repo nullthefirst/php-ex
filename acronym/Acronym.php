@@ -24,7 +24,11 @@
 
 declare(strict_types=1);
 
-function acronym(string $text): string
+// function acronym(string $text): string
+function acronym(string $text)
 {
-    throw new \BadFunctionCallException("Implement the acronym function");
+    $keywords = preg_split("/[\s,-]+/", $text);
+
 }
+
+acronym("As-Soon As Possible");
