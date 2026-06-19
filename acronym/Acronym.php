@@ -29,6 +29,13 @@ function acronym(string $text)
 {
     $keywords = preg_split("/[\s,-]+/", $text);
 
+    $output = "";
+
+    foreach ($keywords as $word) {
+        $output .= strtoupper($word[0]);
+    }
+
+    return $output;
 }
 
 acronym("As-Soon As Possible");
